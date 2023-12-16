@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestSpinner"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Họ tên người nhận:"
+        android:textSize="18dp">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên người nhận"
+        android:textSize="18dp"
+        android:id="@+id/nameNhan">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SDT người nhận:"
+        android:textSize="18dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SDT người nhận"
+        android:textSize="18dp"
+        android:inputType="number|phone"
+        android:id="@+id/sdtNhan">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ nhận hàng"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh/thành phố"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <Spinner
+        android:id="@+id/provinceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huyện/quận"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic">
+    </TextView>
+    <Spinner
+        android:id="@+id/districtSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xã/phường"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic">
+    </TextView>
+    <Spinner
+        android:id="@+id/wardSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnXN"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Xác nhận"
+        android:textSize="19dp"
+        android:layout_marginTop="20dp">
+    </Button>
+</LinearLayout>

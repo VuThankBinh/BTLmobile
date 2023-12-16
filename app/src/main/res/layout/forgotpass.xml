@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="welcome back you've"
+        android:gravity="center"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="been missed"
+        android:gravity="center"
+        android:textSize="18dp">
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_bong">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/userReset"
+        android:layout_marginTop="50dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:background="@drawable/botron_img"
+        android:textSize="18sp"
+        android:padding="10dp">
+    </EditText>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:backgroundTint="#AE2E59"
+        android:textSize="18sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:backgroundTint="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold">
+    </Button>
+</LinearLayout>

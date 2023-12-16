@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home1"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        >
+    </item>
+    <item
+        android:id="@+id/nav_product"
+        android:title="Product1"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_shoe1"
+                    android:title="Shoe"
+                    android:icon="@drawable/shoes"
+                    
+                    >
+                </item>
+                <item
+                    android:id="@+id/nav_clothes1"
+                    android:title="Clothes"
+                    android:icon="@drawable/iconaoball2"
+                    >
+                </item>
+                <item
+                    android:id="@+id/nav_ball1"
+                    android:title="Basketball"
+                    android:icon="@drawable/baseline_sports_basketball_24"
+                    >
+                </item>
+                <item
+                    android:id="@+id/nav_balo1"
+                    android:title="Balo"
+                    android:icon="@drawable/baseline_backpack_24"
+                    >
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_cart_oder1"
+        android:title="Cart/Oder"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_oder1"
+                    android:title="My Oder"
+                    android:icon="@drawable/baseline_shopping_cart_242"
+                    >
+                </item>
+                <item
+                    android:id="@+id/nav_cart1"
+                    android:title="My Cart"
+                    android:icon="@drawable/baseline_shopping_cart_242"
+                    >
+                </item>
+            </group>
+        </menu>
+    </item>
+<item
+    android:id="@+id/nav_profile1"
+    android:title="Profile">
+    <menu>
+        <group>
+            <item
+                android:id="@+id/nav_properties1"
+                android:title="Properties"
+                android:icon="@drawable/baseline_person_24"
+                >
+            </item>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Log out"
+                android:icon="@drawable/baseline_logout_24"
+                >
+            </item>
+        </group>
+    </menu>
+</item>
+
+
+</group>
+</menu>

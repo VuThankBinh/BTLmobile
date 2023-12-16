@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerTextStyle">
+        <item name="android:textSize">16sp</item> <!-- Điều chỉnh kích thước văn bản theo mong muốn -->
+        <item name="android:textColor">@android:color/black</item> <!-- Điều chỉnh màu văn bản theo mong muốn -->
+    </style>
+</resources>

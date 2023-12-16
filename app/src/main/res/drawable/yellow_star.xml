@@ -1,0 +1,13 @@
+<!-- res/drawable/yellow_star.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gray star -->
+    <item android:id="@android:id/background">
+        <bitmap
+            android:tint="@android:color/darker_gray" />
+    </item>
+    <!-- Yellow star representing the rating -->
+    <item android:id="@android:id/progress">
+        <bitmap
+            android:tint="#FFFF00" />
+    </item>
+</layer-list>

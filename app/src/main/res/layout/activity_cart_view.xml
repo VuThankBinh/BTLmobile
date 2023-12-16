@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D8D4D4"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/backhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Cart"
+                android:textSize="22dp"
+                android:layout_marginLeft="120dp"
+                android:textStyle="bold"
+                android:layout_gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/countItem"
+    android:text="0 item | $0"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center"
+    android:textSize="16dp">
+</TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerviewCart">
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/khongsp11"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:text="Bạn chưa có sản phẩm nào trong giỏ hàng"
+            android:gravity="center">
+        </TextView>
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:textSize="20dp"
+            android:id="@+id/ThanhToanBtn"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_shopping_cart_24">
+        </Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:background="#5E5555"
+                android:layout_alignParentBottom="true">
+
+                <!-- Logo -->
+
+
+                <!-- Tên -->
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Tên: Vũ Thanh Bình"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <!-- Mã sinh viên -->
+                <TextView
+                    android:id="@+id/studentIdTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameTextView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Mã sinh viên: 12521069"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <!-- Lớp -->
+                <TextView
+                    android:id="@+id/classTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/studentIdTextView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Lớp: SEK 19.5 (125215)"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

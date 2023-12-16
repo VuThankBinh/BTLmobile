@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKy"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký tài khoản"
+        android:gravity="center"
+        android:textSize="18dp">
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_bong">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My App! My BTL!!!"
+        android:gravity="center"
+        android:textSize="16dp">
+    </TextView>
+    <EditText
+        android:id="@+id/user"
+        android:layout_marginTop="50dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="User name"
+        android:layout_gravity="center"
+        android:background="@drawable/botron_img"
+        android:textSize="18sp"
+        android:padding="10dp">
+    </EditText>
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="280dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:background="@drawable/botron_img"
+        android:textSize="18sp"
+        android:padding="10dp">
+    </EditText>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#918F8F">
+        <EditText
+            android:id="@+id/pass"
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:layout_gravity="center"
+            android:background="@drawable/botron_img"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:inputType="textPassword">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#918F8F">
+        <EditText
+            android:id="@+id/passXN"
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:layout_gravity="center"
+            android:background="@drawable/botron_img"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:inputType="textPassword">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnDK"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:backgroundTint="#AE2E59"
+        android:textSize="18sp"
+        android:textStyle="bold">
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã có tài khoản?"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#03A9F4"
+        android:textSize="20dp"
+        android:id="@+id/loginLink">
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/spID"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:id="@+id/pop_img"
+                app:riv_corner_radius="14dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iconbong"
+                android:layout_gravity="center">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"
+                android:id="@+id/pop_name"
+                android:text="Popular Products">
+            </TextView>
+            <TextView
+                android:id="@+id/pop_des"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:text="Description"
+                android:layout_marginLeft="4dp">
+            </TextView>
+            <TextView
+                android:id="@+id/pop_countcolor"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:text="1 color"
+                android:textColor="#686666"
+                android:layout_marginLeft="4dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RatingBar
+                    android:id="@+id/pop_rat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-66dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="@color/black"
+                    android:rating="3.6"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4">
+
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/pop_ratText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_marginTop="15dp"
+                    android:text="3.6"
+                    android:textColor="#3F51B5"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/baseline_star_rate_24">
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
